@@ -1,0 +1,8 @@
+# ignore dir
+dist/
+node_modules/
+
+# ignore file
+package-lock.json
+yarn.lock
+tsconfig.tsbuildinfo

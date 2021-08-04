@@ -1,0 +1,60 @@
+.card{
+    width: 18rem;
+    height: 7rem;
+    height: fit-content;
+
+    margin-bottom: 1rem;
+
+    background: rgb(240, 240, 240);
+    border-radius: 5.5px;
+
+    cursor: pointer;
+
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0, 0.5)
+}
+.buttonCardDel{
+    width: 1.2rem;
+    height: 1.2rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    float: right;
+    margin-right: -0.3rem;
+    margin-top: -0.3rem;
+
+    color: white;
+    font-weight: bold;
+
+    background: gray;
+    border-radius: 50%;
+    border: none;
+
+    outline: none;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0, 0.5);
+}
+.cardContent{
+    padding: 0.5rem 1rem;
+}
+.cardHeader h3{
+    margin: 0.5rem 0 0.5rem;
+
+    color: blue;
+}
+.divider{
+    width: 100%;
+    height: 1px;
+
+    background: gray;
+}
+.cardBody{
+    height: max-content;
+
+    color: rgb(58, 58, 58);
+}
+.more{
+    display: none;
+}
