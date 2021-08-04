@@ -1,6 +1,6 @@
 # **Atividade - React.JS + Node.JS/Express**
 
->_**Link do repositório:**_ https://github.com/ramonkjl/atividade-ideafix
+>_**Link do repositório:**_ https://github.com/ramonkjl/desafio-ideafix
 
 ### **Tecnologias usadas**
 #### **TypeScript**
