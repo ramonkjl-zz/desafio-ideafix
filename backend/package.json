@@ -6,11 +6,15 @@
   "scripts": {
     "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules --cls src/index.ts",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "test": "jest --verbose --watch"
   },
   "dependencies": {
+    "@types/jest": "^27.0.2",
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "jest": "^27.2.5",
+    "ts-jest": "^27.0.5"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
