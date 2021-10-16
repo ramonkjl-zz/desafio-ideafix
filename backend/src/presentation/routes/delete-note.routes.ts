@@ -1,5 +1,5 @@
-import { HttpRequest, HttpResponse } from "../http/http-types";
-import { DeleteNoteUseCase } from "../usecases/delete-note";
+import { HttpRequest, HttpResponse } from "../../http/http-types";
+import { DeleteNoteUseCase } from "../../domain/usecases/delete-note";
 import { BaseRouter } from "./base-router";
 
 export class DeleteNoteRouter implements BaseRouter {

@@ -1,8 +1,10 @@
+import { NoteRepository } from "../../infra/repositories/note-repository"
 import { CreateNoteUseCase } from "./create-note"
 
 describe('CreateNoteUseCase()', () => {
   test('Should ', async () => {
-    const sut = new CreateNoteUseCase()
+    const repo = new NoteRepository()
+    const sut = new CreateNoteUseCase(repo)
 
     const expected = {
       "id": "",

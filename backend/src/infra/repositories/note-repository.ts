@@ -1,4 +1,4 @@
-import { NoteRequest, NotesDatabase } from "../../database/notes-database";
+import { NoteRequest, NotesDatabase } from "../database/notes-database";
 
 export class NoteRepository {
   private notesModel: NotesDatabase

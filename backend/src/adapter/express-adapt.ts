@@ -1,11 +1,11 @@
 import { Request, Response } from "express";
 
-import { BaseRouter } from "../routes/base-router";
+import { BaseRouter } from "../presentation/routes/base-router";
 
 export class ExpressAdapt {
   static adapt(router: BaseRouter) {
     return async (req: Request, res: Response) => {
-      console.log(req.body)
+
       const httpRequest = {
         body: req.body,
         params: req.params

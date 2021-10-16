@@ -1,5 +1,5 @@
-import { HttpRequest, HttpResponse } from "../http/http-types";
-import { CreateNoteUseCase } from "../usecases/create-note";
+import { HttpRequest, HttpResponse } from "../../http/http-types";
+import { CreateNoteUseCase } from "../../domain/usecases/create-note";
 import { BaseRouter } from "./base-router";
 
 export class CreateNoteRouter implements BaseRouter {

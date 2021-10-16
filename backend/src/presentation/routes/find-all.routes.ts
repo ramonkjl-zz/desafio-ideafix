@@ -1,5 +1,5 @@
-import { HttpRequest, HttpResponse } from "../http/http-types";
-import { FindNotesUseCase } from "../usecases/find-notes";
+import { HttpRequest, HttpResponse } from "../../http/http-types";
+import { FindNotesUseCase } from "../../domain/usecases/find-notes";
 import { BaseRouter } from "./base-router";
 
 export class FindAllRouter implements BaseRouter {

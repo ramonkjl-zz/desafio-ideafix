@@ -1,4 +1,4 @@
-import { NoteRepository } from "../repositories/note-repository";
+import { NoteRepository } from "../../infra/repositories/note-repository";
 
 export class FindNotesUseCase {
 

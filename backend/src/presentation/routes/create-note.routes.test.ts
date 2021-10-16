@@ -1,4 +1,6 @@
-import { HttpRequest } from "../http/http-types"
+import { CreateNoteUseCase } from "../../domain/usecases/create-note"
+import { HttpRequest } from "../../http/http-types"
+import { NoteRepository } from "../../infra/repositories/note-repository"
 import { CreateNoteRouter } from "./create-note.routes"
 
 describe('CreateNoteRouter()', () => {
@@ -10,7 +12,10 @@ describe('CreateNoteRouter()', () => {
       }
     }
 
-    const sut = new CreateNoteRouter()
+    const repository = new NoteRepository()
+    const useCase = new CreateNoteUseCase(repository)
+    const sut = new CreateNoteRouter(useCase)
+
     const response = await sut.route(request)
 
     const expected = {

@@ -1,4 +1,4 @@
-import { generateID } from "../utils/generateID"
+import { generateID } from "../../utils/generateID"
 import { notesMock } from "./mock"
 
 type NoteData = { //O que vai para o cliente.

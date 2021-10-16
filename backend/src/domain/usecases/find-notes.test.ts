@@ -1,8 +1,11 @@
+import { NoteRepository } from "../../infra/repositories/note-repository"
 import { FindNotesUseCase } from "./find-notes"
+
 
 describe('', () => {
   test('Should ', async () => {
-    const sut = new FindNotesUseCase()
+    const repo = new NoteRepository()
+    const sut = new FindNotesUseCase(repo)
 
     const expected = [
       {

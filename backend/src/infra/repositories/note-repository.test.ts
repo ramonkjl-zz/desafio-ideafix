@@ -1,4 +1,4 @@
-import { NoteRequest } from "../../database/notes-database"
+import { NoteRequest } from "../database/notes-database"
 import { NoteRepository } from "./note-repository"
 
 const makeSut = () => {

@@ -1,13 +1,13 @@
 import { Router } from 'express'
 
-import { ExpressAdapt } from '../../adapt/express-adapt'
-import { NoteRepository } from '../../repositories/note-repository'
-import { CreateNoteRouter } from '../../routes/create-note.routes'
-import { DeleteNoteRouter } from '../../routes/delete-note.routes'
-import { FindAllRouter } from '../../routes/find-all.routes'
-import { CreateNoteUseCase } from '../../usecases/create-note'
-import { DeleteNoteUseCase } from '../../usecases/delete-note'
-import { FindNotesUseCase } from '../../usecases/find-notes'
+import { ExpressAdapt } from '../../adapter/express-adapt'
+import { CreateNoteUseCase } from '../../domain/usecases/create-note'
+import { DeleteNoteUseCase } from '../../domain/usecases/delete-note'
+import { FindNotesUseCase } from '../../domain/usecases/find-notes'
+import { NoteRepository } from '../../infra/repositories/note-repository'
+import { CreateNoteRouter } from '../../presentation/routes/create-note.routes'
+import { DeleteNoteRouter } from '../../presentation/routes/delete-note.routes'
+import { FindAllRouter } from '../../presentation/routes/find-all.routes'
 
 const routes = Router()
 
