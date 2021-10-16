@@ -2,29 +2,29 @@ import { Request, Response } from "express"
 
 import { NotesDatabase } from '../database/notes-database'
 
-const notesDatabase = new NotesDatabase()
+const notesModel = new NotesDatabase()
 
 class NoteController {
   constructor() { }
 
-  getAllNotes(request: Request, response: Response) {
-    const allNotes = notesDatabase.findAll()
+  async getAllNotes(request: Request, response: Response) {
+    const notes = await notesModel.findAll()
 
-    return response.json(allNotes)
+    return response.json(notes)
   }
 
-  createNote(request: Request, response: Response) {
+  async createNote(request: Request, response: Response) {
     const body = request.body
 
-    const createdNote = notesDatabase.create(body)
+    const createdNote = await notesModel.create(body)
 
     return response.json(createdNote)
   }
 
-  deleteOne(request: Request, response: Response) {
+  async deleteOne(request: Request, response: Response) {
     const id = request.params.id
 
-    const deleted = notesDatabase.deleteOne(id)
+    const deleted = await notesModel.deleteOne(id)
 
     return response.json(deleted)
   }

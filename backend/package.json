@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules --cls src/index.ts",
+    "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules --cls src/clean-arch/main/server",
     "build": "tsc",
     "start": "node dist/index.js",
     "test": "jest --verbose --watch"
